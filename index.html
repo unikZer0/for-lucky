@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Tetris</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="clearsound" src="sound/Race_Car (1).mp3" preload="auto"></audio>
+    <audio
+      id="soundclear"
+      src="sound/DXE9BCY-vibrant-game-game-touch-2.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="endsound"
+      src="sound/negative_beeps-6008.mp3"
+      preload="auto"
+    ></audio>
+    <div class="container">
+        <div class="con">
+            <canvas width='300' height='500'></canvas>
+            <div class="con-btn">
+                <button id="playbutton" onclick="playButtonClicked();">ຫລິ້ນ</button>
+                <button id="playbutton" onclick="pauseButtonClicked();">ເລີ່ມໃຫມ່</button>
+            </div>
+        </div>
+      <div class="count_point">
+        <div class="con-p">
+            <h3>ຄະແນນ</h3>
+        <p id="pointCounter">0</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/tetris.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/render.js"></script>
+  </body>
+</html>
